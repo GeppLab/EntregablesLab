@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --white:#fafafb;
+    --purple:#0095ff;
+    --blue-light:#0473d4;
+    --blue-dark:#0b3d72;
+    --green:#2c7b90;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--blue-light), var(--blue-dark));
+    height: 100vh;
+    font-family: 'prompt',sans-serif;
+}
+
+.container-fluid{
+    margin-top: 130px;
+
+    scale: 97%;
+  
+}
+
+#row1{
+
+  padding: 4px;
+  margin: 1px;
+
+}
+
+#addTask{
+    scale: 95%;
+    background-color: transparent;
+    border-color:var(--white);
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 30px;
+    width: 500px;
+}
+
+#addTask input{
+    padding: 15px;
+    margin-top: 2.5rem;
+    margin-left: 15px;
+    transform: translateX(15px);
+
+    font-size: 14px;
+    border-radius: 30px; 
+    border-color: transparent;
+
+}
+#c1 input::placeholder{
+    font-size: 15px;
+    color: rgb(137, 135, 135);
+}
+#c1 input:focus::placeholder {
+    color: transparent;
+  }
+
+i{
+    font-size: 55px;
+    color: var(--white);
+    transition: transform 0.3s ease 0s;
+    margin-left: 200px;
+    margin-top: 20px;
+} 
+
+#taskSecc{
+    scale: 104%;
+    background-color: transparent;
+    border-color:var(--white);
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 30px;
+    
+    Overflow: auto;
+    
+    width: 700px;
+    margin-top: 70px;
+    margin-right: 10px;
+    scroll-margin-inline: 90px;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+#row3{
+    scale: 97%;
+    background-color: var(--white);
+    border-radius: 30px;
+    height: 50px;
+    margin-right: 2px;
+    margin-left: -2px;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 4px;
+
+    overflow: scroll;
+}
+
+/* Estilos para el modo de edición */
+.edit-mode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid var(--edited-color);
+    border-radius: 6px;
+  }
+  
+  .edit-field {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Espacio entre los campos */
+    padding: 1px; /* Espacio interno en el modo de ediciÃ³n */
+    border: 1px solid var(--edited-color); /* Borde en el modo de ediciÃ³n */
+    border-radius: 8px; /* Radio del borde en el modo de ediciÃ³n */
+    scale: 87%;
+     
+  }
+  
+
+  .small-button {
+    padding: 8px; /* Ajusta el padding para hacer el botÃ³n mÃ¡s pequeÃ±o */
+    background-color: var(--purple); /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 16px; /* Ajusta el radio del borde */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    scale: 80%;
+    width: 1rem;
+  }
+  
+
+/* Agrega estilos para el modo de edición */
+.edit-mode .edit-field {
+    width: 100%; /* Haz que los campos de entrada ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* Agrega espacio vertical entre los campos */
+    padding: -10px; /* Agrega espacio interno a los campos */
+    box-sizing: border-box; /* Incluye el espacio de relleno en el ancho total */
+    overflow-x: scroll; /* Agrega desplazamiento horizontal si es necesario */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  }
+  
+  /* Ajusta los estilos de los campos de entrada en modo de edición */
+  .edit-mode .edit-field[type="text"],
+  .edit-mode .edit-field[type="number"] {
+    width: calc(100% - 15px); /* Reduzca ligeramente el ancho para evitar desbordamiento horizontal */
+  }
+  
+
+
+.small-button:hover {
+    background-color: var(--blue-light); /* Cambia el color de fondo al pasar el mouse */
+}
+  
+
+#sendTasksButton{
+    padding: 12px;
+    width: 9.5rem;
+    margin-left: 75rem;
+    margin-right: 20rem;
+    font-size: 20px;
+    display: flex;
+    margin-top: -50px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#eliminarTodo{
+    padding: 12px;
+    width: 9rem;
+    margin-left: 70rem;
+    margin-right: -1rem;
+    font-size: 20px;
+    display: flex;
+    margin-top: -55px;
+    flex-direction: column;
+    justify-content: center;
+    scale: 76%;
+
+}
+
+#eliminarTodo:hover{
+    color: red;
+}
+
+#sendTasksButton:hover{
+    color: yellow;
+}
+
+
+#marcaExp{
+    font-size: 13.5px;
+    width:100px;
+    margin-right: -2rem;
+    margin-left: -1rem;
+
+}
+
+#projExp{
+    font-size: 13.5px;
+    width: 150px;
+    margin-right: -2rem;
+    margin-left: -1rem;
+    word-wrap: break-word;
+
+}
+
+#piezasExp{
+    font-size: 13.5px;
+    width: 90px;
+    margin-right: -3rem;
+    
+}
+
+#iconBC{
+    width: 28px;
+    height: 28px;
+}
+
+#linkBC{
+    width: 25px;
+}
+
+#cambiosExp{
+    font-size: 13.5px;
+    width: 90px;
+    margin-right: -2em;
+}
+
+#edit{
+    width: 45px;
+    height: 45px;
+    color: black;
+}
+
+
+#delete{
+    width: 45px;
+    height: 45px;
+    margin-left: -1.8rem;
+    color: black;
+}
+
+.user{
+    display: flex;
+    font-size: 40px;
+    color: var(--white);
+    margin-left: 8rem;
+    margin-bottom: -8.5rem;
+    margin-top: 2rem;
+}
+
+.fecha{
+    font-size: 16px;
+    color: var(--white);
+    margin-left: 8rem;
+    transform: translateY(35px);
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 424px) and (min-width: 5px)  {  
+    i{
+       transform: translateX(-65px);
+     }
+ }
+@media only screen and (max-width: 500px) and (min-width: 5px)  {  
+    #marcaExp,#projExp,#piezasExp,#iconBC,#linkBC,#cambiosExp,#edit,#delete{
+       scale: 85%;
+     }
+ }
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #marcaExp{
+       margin-left: -3rem;
+       margin-right: -2.8rem;
+       
+     }
+ } 
+ @media only screen and (max-width: 424px) and (min-width: 5px)  {  
+    #marcaExp{
+        transform: translateX(1.5em);
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #projExp{
+       transform: translateX(-1px);
+       width: 100px;
+      
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #piezasExp{
+       transform: translateX(-30px);
+       
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #iconBC,#linkBC{
+       margin-right: -2em;
+       transform: translateX(-28px);
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #cambiosExp{
+       margin-right: -4.7em;
+       transform: translateX(-35px);
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #edit{
+       margin-right: -1em;
+       transform: translateX(-20px);
+     }
+ } 
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #delete{
+       margin-right: -2em;
+       transform: translateX(-10px);
+     }
+ } 
+
+ @media only screen and (max-width: 549px) and (min-width: 5px)  {  
+    #sendTasksButton{
+       margin-top: 10px;
+       
+     }
+ } 
+
+ @media only screen and (max-width: 1260px) and (min-width: 5px)  {  
+    #sendTasksButton{
+       margin-top: 10px;
+       margin-left: 20rem;
+      
+     }
+ } 
+
+
+
+ @media only screen and (max-width: 1260px) and (min-width: 5px)  {  
+    #eliminarTodo{
+       margin-top: 8px;
+       margin-left: -1rem;
+      
+     }
+ } 
+

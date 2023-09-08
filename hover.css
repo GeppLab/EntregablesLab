@@ -1,0 +1,35 @@
+#addTask{
+    transition: transform 0.3s ease 0s;
+}
+#addTask:hover{
+    transform:translateY(-3px);
+    border-color: #FFE000;
+   
+}
+#addTask i:hover{
+    color: #FFE000;
+    cursor: pointer;  
+
+    transform: rotateZ(90deg); 
+    animation: ease-out 5s linear infinite;
+}
+
+#iconBC:hover{
+    transform: scale(1.1);  
+    transition: transform 0.3s ease 0s;
+}
+
+
+#edit:hover{
+    filter: invert(76%) sepia(87%) saturate(599%) hue-rotate(357deg) brightness(102%) contrast(105%);
+}
+
+#delete:hover{
+    filter: invert(76%) sepia(87%) saturate(599%) hue-rotate(357deg) brightness(102%) contrast(105%);
+}
+
+#row3:hover{
+    transform: scale(101%);  
+    transition: transform 0.3s ease 0s;
+
+}

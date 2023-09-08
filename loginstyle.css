@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --purple: #0095ff;
+    --blue-light: #0473d4;
+    --blue-dark: #0b3d72;
+    --green: #2c7b90;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--blue-light), var(--blue-dark));
+    height: 100vh;
+    font-family: 'prompt', sans-serif;
+}
+
+#loginSection{
+    padding-bottom:180px;
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login h1 {
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.login input, #areaSelect {
+    width: 250px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+}
+.logo{
+    scale: 50%;
+    margin-bottom: -100px;
+    margin-left: -10px;
+}
+
+#usernameInput{
+    text-align: center;
+}
+
+#areaSelect {
+    color: gray;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    padding: 12px;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: var(--blue-light);
+}
+
+@media only screen and (max-width: 500px) {
+    .login {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
