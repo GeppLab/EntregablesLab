@@ -189,11 +189,14 @@ i{
 }
 
 #eliminarTodo:hover{
-    color: red;
+   
+    background-color: red;
 }
 
 #sendTasksButton:hover{
-    color: yellow;
+    background-color: yellow;
+    color: var(--blue-dark);
+
 }
 
 

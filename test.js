@@ -58,7 +58,7 @@ function enviarTareasPorCorreo() {
     });
 
     // Crear un elemento de correo electrónico
-    const mailToLink = `mailto:rodrigo.gianechini@valtech.com?subject=Entregables de ${username}&body=${encodeURIComponent(
+    const mailToLink = `mailto:mario.carmelo@valtech.com?subject=Entregables de ${username}&body=${encodeURIComponent(
         contenidoCorreo
     )}`;
 
